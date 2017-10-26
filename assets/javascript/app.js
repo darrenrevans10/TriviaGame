@@ -53,6 +53,7 @@ $("#startGame").on("click", function() {
 	$("#questions").show();
 	$("#submit").show();
 	run();
+	$('input[type="radio"]').prop('checked', false);
 
 });
 
