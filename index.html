@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Totally Trivia Game | Darren Evans</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/javascript/app.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+
+			<div class="row">
+				<div class ="col-md-12">
+					<h1>Totally Trivial Trivia!</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div style="text-align: center;" class="col-md-8">
+					<button id="startGame">Start</button>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div id="timeLeft"><h2>Time Remaining: 30 Seconds</h2></div>
+				</div>
+			</div>
+
+			<div class="row" id="questions">
+				<div class="col-md-12">
+					<h3>Lambeau Field is the home field of which NFL team?</h3>
+					<form class="question">
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Carolina Panthers
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="correct">Green Bay Packers
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Dallas Cowboys
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Denver Broncos
+						</label>
+					</form>
+						<br>
+					<h3>Which tennis player has won the most men's Grand Slam titles?</h3>
+					<form class="question">
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Rafael Nadal
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">John McEnroe
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="correct">Roger Federer
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Pete Sampras
+						</label>
+					</form>
+						<br>
+					<h3>What player does not currently player for Real Madrid in professional soccer?</h3>
+					<form class="question">
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Cristiano Ronaldo
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Sergio Ramos
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="correct">Lionel Messi
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Marcelo
+						</label>
+					</form>
+						<br>
+					<h3>Who is the only athlete ever to play in a Super Bowl and a World Series?</h3>
+					<form class="question">
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="correct">Deion Sanders
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Reggie Wayne
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Bo Jackson
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Barry Bonds
+						</label>
+					</form>
+						<br>
+					<h3>Which basketball team did Michael Jordan play for in college?</h3>
+					<form class="question">
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">University of Kentucky
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">University of Kansas
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Duke University
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="correct">University of North Carolina
+						</label>
+					</form>
+						<br>
+					<h3>Which athlete has won the most Olympic medals?</h3>
+					<form class="question">
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Michael Jordan
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Carl Lewis
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="correct">Michael Phelps
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Usain Bolt
+						</label>
+					</form>
+						<br>
+					<h3>How many holes are there in a full round of golf?</h3>
+					<form class="question">
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="correct">18 holes
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">9 holes
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">14 holes
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">7 holes
+						</label>
+					</form>
+						<br>
+					<h3>Who invented the sport of Basketball?</h3>
+					<form class="question">
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Albert Spalding
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="correct">James Naismith
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Walter Camp
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="optradio" value="wrong">Larry Bird
+						</label>
+					</form>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div style="text-align: center;" class="col-md-8">
+					<button id="submit">Submit</button>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<div id="results"></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div style="text-align: center;" class="col-md-8">
+					<button id="startOver">Restart</button>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
+
+		</div>
+	</div>
+	
+</body>
+</html>

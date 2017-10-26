@@ -1,0 +1,64 @@
+.wrapper {
+	background-image: url(../images/Vintage.jpg);
+	padding: 163px;
+}
+
+.container {
+	background-color: #EDEDED;
+	padding-top: 25px;
+	height: 1230px;
+	width: 950px;
+	border-style: dashed;
+	border-width: 7px;
+	border-color: #D54B4B;
+}
+
+.row {
+
+}
+
+h1 {
+	text-align: center;
+	font-size: 450%;
+	font-weight: bold;
+	color: black;
+	font-family: 'Karla', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Karla', sans-serif;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Karla', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.question {
+	text-align: center;
+	font-family: 'Karla', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+button {
+	color: white;
+	background-color: #D54B4B;
+	border-style: dotted;
+	border-width: 6px;
+	border-color: black;
+	width: 430px;
+	height: 90px;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 150px;
+	font-family: 'Karla', sans-serif;
+
+}
+
+#submit, #startOver {
+	margin-top: 45px;
+}
